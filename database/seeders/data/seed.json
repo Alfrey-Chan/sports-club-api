@@ -1,0 +1,847 @@
+{
+    "age_categories": [
+        {
+            "幼児": {
+                "年少": [3],
+                "年中": [4],
+                "年長": [5, 6]
+            },
+            "小学生": {
+                "低学年": [6, 8],
+                "中学年": [8, 10],
+                "高学年": [10, 12]
+            }
+        }
+    ],
+    "track_categories": [
+        {
+            "name_jp": "マット",
+            "name_en": "Mat",
+            "levels": {
+                "levels_standard": [
+                    {
+                        "code": "L1",
+                        "name_ja": "バク転",
+                        "name_en": "Back Handspring",
+                        "skills": [
+                            {
+                                "description_ja": "補助で跳ぶほうまでできる",
+                                "description_en": "With assistance, able to reach the jumping phase"
+                            },
+                            {
+                                "description_ja": "後半の立つところができる",
+                                "description_en": "Able to perform the stand-up phase in the second half"
+                            },
+                            {
+                                "description_ja": "補助ありバク転",
+                                "description_en": "Back handspring with assistance"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L2",
+                        "name_ja": "転回",
+                        "name_en": "Handspring",
+                        "skills": [
+                            {
+                                "description_ja": "その場補助転回",
+                                "description_en": "Assisted standing handspring"
+                            },
+                            {
+                                "description_ja": "その場転回",
+                                "description_en": "Standing handspring"
+                            },
+                            {
+                                "description_ja": "助走〜補助転回",
+                                "description_en": "Run-up to assisted handspring"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L3",
+                        "name_ja": "ヘッドスプリング",
+                        "name_en": "Head Spring",
+                        "skills": [
+                            {
+                                "description_ja": "30cmで立てる",
+                                "description_en": "Able to stand up from 30 cm"
+                            },
+                            {
+                                "description_ja": "20cmで立てる",
+                                "description_en": "Able to stand up from 20 cm"
+                            },
+                            {
+                                "description_ja": "10cmで立てる",
+                                "description_en": "Able to stand up from 10 cm"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L4",
+                        "name_ja": "倒立前転",
+                        "name_en": "Handstand Forward Roll",
+                        "skills": [
+                            {
+                                "description_ja": "壁倒立前転",
+                                "description_en": "Wall-assisted handstand forward roll"
+                            },
+                            {
+                                "description_ja": "補助倒立前転",
+                                "description_en": "Assisted handstand forward roll"
+                            },
+                            {
+                                "description_ja": "逆立ち前回り",
+                                "description_en": "Handstand forward roll"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L5",
+                        "name_ja": "側転",
+                        "name_en": "Cartwheel",
+                        "skills": [
+                            {
+                                "description_ja": "台を越えて側転橋まわり",
+                                "description_en": "Cartwheel into bridge rotation over a raised platform"
+                            },
+                            {
+                                "description_ja": "よこ向き側転橋まわり",
+                                "description_en": "Side-facing cartwheel into bridge rotation"
+                            },
+                            {
+                                "description_ja": "たて向き側転橋まわり",
+                                "description_en": "Vertical cartwheel into bridge rotation"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L6",
+                        "name_ja": "倒立",
+                        "name_en": "Handstand",
+                        "skills": [
+                            {
+                                "description_ja": "トンネル5秒",
+                                "description_en": "Tunnel hold, 5 seconds"
+                            },
+                            {
+                                "description_ja": "おなかカベ倒立5秒",
+                                "description_en": "Handstand against wall (stomach to wall), 5 seconds"
+                            },
+                            {
+                                "description_ja": "せなかカベ倒立5秒",
+                                "description_en": "Handstand against wall (back to wall), 5 seconds"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L7",
+                        "name_ja": "開脚前転・後転",
+                        "name_en": "Straddle Forward / Backward Roll",
+                        "skills": [
+                            {
+                                "description_ja": "板渡開脚前転",
+                                "description_en": "Straddle forward roll over a board"
+                            },
+                            {
+                                "description_ja": "段差3枚開脚前転",
+                                "description_en": "Straddle forward roll from 3-mat height"
+                            },
+                            {
+                                "description_ja": "段差1枚開脚後転",
+                                "description_en": "Straddle backward roll from 1-mat height"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L8",
+                        "name_ja": "後転",
+                        "name_en": "Backward Roll",
+                        "skills": [
+                            {
+                                "description_ja": "板渡後転",
+                                "description_en": "Backward roll over a board"
+                            },
+                            {
+                                "description_ja": "段差3枚後転",
+                                "description_en": "Backward roll from 3-mat height"
+                            },
+                            {
+                                "description_ja": "段差1枚後転",
+                                "description_en": "Backward roll from 1-mat height"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L9",
+                        "name_ja": "フリッチ",
+                        "name_en": "Front Handspring Prep (Flic)",
+                        "skills": [
+                            {
+                                "description_ja": "肩つき",
+                                "description_en": "Shoulder contact drill"
+                            },
+                            {
+                                "description_ja": "頭つき",
+                                "description_en": "Head contact drill"
+                            },
+                            {
+                                "description_ja": "腰時",
+                                "description_en": "Hip timing / hip contact drill"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L10",
+                        "name_ja": "前転",
+                        "name_en": "Forward Roll",
+                        "skills": [
+                            {
+                                "description_ja": "板渡で前に回れる",
+                                "description_en": "Able to rotate forward over a board"
+                            },
+                            {
+                                "description_ja": "板渡前転",
+                                "description_en": "Forward roll over a board"
+                            },
+                            {
+                                "description_ja": "段差前転",
+                                "description_en": "Forward roll from a raised surface"
+                            }
+                        ]
+                    }
+                ],
+                "levels_beginner": [
+                    {
+                        "code": "B1",
+                        "name_ja": "片足転回",
+                        "name_en": "One-Leg Handspring Prep",
+                        "skills": [
+                            {
+                                "description_ja": "補助あり",
+                                "description_en": "With assistance"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "B2",
+                        "name_ja": "転回連続",
+                        "name_en": "Continuous Handspring",
+                        "skills": [
+                            {
+                                "description_ja": "補助あり",
+                                "description_en": "With assistance"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "B3",
+                        "name_ja": "ロンダート",
+                        "name_en": "Round-off",
+                        "skills": [
+                            {
+                                "description_ja": "たて向き側転",
+                                "description_en": "Vertical cartwheel"
+                            },
+                            {
+                                "description_ja": "補助からたて向き側転",
+                                "description_en": "From assisted into vertical cartwheel"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "B4",
+                        "name_ja": "ロンダート〜バク転",
+                        "name_en": "Round-off to Back Handspring",
+                        "skills": [
+                            {
+                                "description_ja": "ロンダート〜ジャンプねる",
+                                "description_en": "Round-off to jump and lie-flat drill"
+                            },
+                            {
+                                "description_ja": "ロンダート〜止まってバク転",
+                                "description_en": "Round-off, stop, then back handspring"
+                            },
+                            {
+                                "description_ja": "補助あり",
+                                "description_en": "With assistance"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "B5",
+                        "name_ja": "宙返り",
+                        "name_en": "Somersault",
+                        "skills": [
+                            {
+                                "description_ja": "ジャンプジャンプ〜宙返り",
+                                "description_en": "Jump-jump into somersault"
+                            },
+                            {
+                                "description_ja": "補助でスタンド宙返り",
+                                "description_en": "Stand somersault with assistance"
+                            },
+                            {
+                                "description_ja": "後半の補助でスタンド宙返り",
+                                "description_en": "Stand somersault with assistance in the second half"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name_jp": "跳び箱",
+            "name_en": "Vault",
+            "levels": {
+                "levels_standard": [
+                    {
+                        "code": "L1",
+                        "name_ja": "4段転回とび",
+                        "name_en": "Handspring Vault (4-box)",
+                        "skills": [
+                            {
+                                "description_ja": "後半の立ち方を理解",
+                                "description_en": "Understand the stand-up technique in the second half"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L2",
+                        "name_ja": "跳れ込み（4段）",
+                        "name_en": "Dive-on Mount (4-box)",
+                        "skills": [
+                            {
+                                "description_ja": "両足ジャンプ倒立〜跳れこみ",
+                                "description_en": "Two-foot jump to handstand → dive-on"
+                            },
+                            {
+                                "description_ja": "かかえジャンプ倒立〜跳れこみ",
+                                "description_en": "Tuck-jump to handstand → dive-on"
+                            },
+                            {
+                                "description_ja": "倒立〜跳れ込み（床）",
+                                "description_en": "Handstand → dive-on (from floor)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L3",
+                        "name_ja": "6段開脚とび（よこ）",
+                        "name_en": "Straddle Vault (6-box, sideways)",
+                        "skills": [
+                            {
+                                "description_ja": "5段開脚とび",
+                                "description_en": "Straddle vault (5-box)"
+                            },
+                            {
+                                "description_ja": "4段開脚とび",
+                                "description_en": "Straddle vault (4-box)"
+                            },
+                            {
+                                "description_ja": "ロイタージャンプ6段",
+                                "description_en": "Springboard jump (6-box)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L4",
+                        "name_ja": "6段台上前転（たて）",
+                        "name_en": "On-Box Forward Roll (6-box, lengthwise)",
+                        "skills": [
+                            {
+                                "description_ja": "5段台上前転",
+                                "description_en": "On-box forward roll (5-box)"
+                            },
+                            {
+                                "description_ja": "4段台上前転",
+                                "description_en": "On-box forward roll (4-box)"
+                            },
+                            {
+                                "description_ja": "ロイタージャンプ6段",
+                                "description_en": "Springboard jump (6-box)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L5",
+                        "name_ja": "6段開脚とび（たて）",
+                        "name_en": "Straddle Vault (6-box, lengthwise)",
+                        "skills": [
+                            {
+                                "description_ja": "5段開脚とび",
+                                "description_en": "Straddle vault (5-box)"
+                            },
+                            {
+                                "description_ja": "4段開脚とび",
+                                "description_en": "Straddle vault (4-box)"
+                            },
+                            {
+                                "description_ja": "ロイタージャンプ6段",
+                                "description_en": "Springboard jump (6-box)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L6",
+                        "name_ja": "4段開脚とび（よこ）",
+                        "name_en": "Straddle Vault (4-box, sideways)",
+                        "skills": [
+                            {
+                                "description_ja": "その場開脚とび",
+                                "description_en": "Straddle vault from standing (no run)"
+                            },
+                            {
+                                "description_ja": "その場開脚のり",
+                                "description_en": "Straddle mount from standing (no run)"
+                            },
+                            {
+                                "description_ja": "ロイタージャンプ4段",
+                                "description_en": "Springboard jump (4-box)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L7",
+                        "name_ja": "4段台上前転（たて）",
+                        "name_en": "On-Box Forward Roll (4-box, lengthwise)",
+                        "skills": [
+                            {
+                                "description_ja": "走ってマットに前転",
+                                "description_en": "Run and do a forward roll on the mat"
+                            },
+                            {
+                                "description_ja": "低い台にその場台上前転",
+                                "description_en": "Standing on-box forward roll on a low platform"
+                            },
+                            {
+                                "description_ja": "ロイタージャンプ3段",
+                                "description_en": "Springboard jump (3-box)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L8",
+                        "name_ja": "4段開脚とび（よこ）",
+                        "name_en": "Straddle Vault (4-box, sideways)",
+                        "skills": [
+                            {
+                                "description_ja": "その場開脚とび",
+                                "description_en": "Straddle vault from standing (no run)"
+                            },
+                            {
+                                "description_ja": "その場開脚のり",
+                                "description_en": "Straddle mount from standing (no run)"
+                            },
+                            {
+                                "description_ja": "ロイタージャンプ2段",
+                                "description_en": "Springboard jump (2-box)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L9",
+                        "name_ja": "ロイター板ジャンプ",
+                        "name_en": "Springboard Jump",
+                        "skills": [
+                            {
+                                "description_ja": "補助あり",
+                                "description_en": "With assistance"
+                            },
+                            {
+                                "description_ja": "走ってマットに両足着地",
+                                "description_en": "Run and land on the mat with two feet"
+                            },
+                            {
+                                "description_ja": "その場両足ジャンプ（2段）",
+                                "description_en": "Two-foot jump in place (2-box)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L10",
+                        "name_ja": "両足ジャンプ（1段）",
+                        "name_en": "Two-Foot Jump (1-box)",
+                        "skills": [
+                            {
+                                "description_ja": "とび箱にのれる",
+                                "description_en": "Able to get onto the vault box"
+                            },
+                            {
+                                "description_ja": "前に両足ジャンプ",
+                                "description_en": "Two-foot jump forward"
+                            },
+                            {
+                                "description_ja": "うさぎジャンプ（その場）",
+                                "description_en": "Bunny hop (in place)"
+                            }
+                        ]
+                    }
+                ],
+                "levels_beginner": [
+                    {
+                        "code": "B1",
+                        "name_ja": "6段転回とび",
+                        "name_en": "Handspring Vault (6-box)",
+                        "skills": [
+                            {
+                                "description_ja": "5段転回とび",
+                                "description_en": "Handspring vault (5-box)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "B2",
+                        "name_ja": "とび込み前転",
+                        "name_en": "Dive Roll",
+                        "skills": [
+                            {
+                                "description_ja": "補助あり",
+                                "description_en": "With assistance"
+                            },
+                            {
+                                "description_ja": "その場とび込み前転",
+                                "description_en": "Dive roll from standing (no run)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "B3",
+                        "name_ja": "かかえ込み前宙",
+                        "name_en": "Tuck Front Somersault",
+                        "skills": [
+                            {
+                                "description_ja": "補助あり",
+                                "description_en": "With assistance"
+                            },
+                            {
+                                "description_ja": "タッチ前宙",
+                                "description_en": "Touch-assisted front somersault drill"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "B4",
+                        "name_ja": "屈伸前宙",
+                        "name_en": "Pike Front Somersault",
+                        "skills": [
+                            {
+                                "description_ja": "補助あり",
+                                "description_en": "With assistance"
+                            },
+                            {
+                                "description_ja": "タッチ屈伸前宙",
+                                "description_en": "Touch-assisted pike front somersault drill"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "B5",
+                        "name_ja": "伸身前宙",
+                        "name_en": "Layout Front Somersault",
+                        "skills": [
+                            {
+                                "description_ja": "補助あり",
+                                "description_en": "With assistance"
+                            },
+                            {
+                                "description_ja": "ゆりかご（手の操作）",
+                                "description_en": "Cradle drill (hand technique)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name_jp": "鉄棒",
+            "name_en": "Horizontal Bar",
+            "levels": {
+                "levels_standard": [
+                    {
+                        "code": "L1",
+                        "name_ja": "後ろ回り連続",
+                        "name_en": "Consecutive Back Hip Circles",
+                        "skills": [
+                            {
+                                "description_ja": "手首だけの補助でできる",
+                                "description_en": "Can do it with wrist-only assistance"
+                            },
+                            {
+                                "description_ja": "1回目だけの補助でできる",
+                                "description_en": "Can do it with assistance only on the first rep"
+                            },
+                            {
+                                "description_ja": "補助で2回まわれる",
+                                "description_en": "Can rotate twice with assistance"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L2",
+                        "name_ja": "前回り〜即後ろ回り",
+                        "name_en": "Forward Hip Circle → Immediate Back Hip Circle",
+                        "skills": [
+                            {
+                                "description_ja": "手首だけの補助でできる",
+                                "description_en": "Can do it with wrist-only assistance"
+                            },
+                            {
+                                "description_ja": "前回りだけの補助でできる",
+                                "description_en": "Can do it with assistance for the forward circle only"
+                            },
+                            {
+                                "description_ja": "前回り〜つばめスイング",
+                                "description_en": "Forward hip circle → tsubame swing"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L3",
+                        "name_ja": "前回り",
+                        "name_en": "Forward Hip Circle",
+                        "skills": [
+                            {
+                                "description_ja": "前半だけの補助でできる",
+                                "description_en": "Can do it with assistance on the first half only"
+                            },
+                            {
+                                "description_ja": "後半の起き上がりの理解",
+                                "description_en": "Understand the stand-up/recovery in the second half"
+                            },
+                            {
+                                "description_ja": "前半の倒れ方の理解",
+                                "description_en": "Understand how to tip/fall in the first half"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L4",
+                        "name_ja": "後ろ回り",
+                        "name_en": "Back Hip Circle",
+                        "skills": [
+                            {
+                                "description_ja": "手首だけの補助でできる",
+                                "description_en": "Can do it with wrist-only assistance"
+                            },
+                            {
+                                "description_ja": "腰だけの補助でできる",
+                                "description_en": "Can do it with waist/hip-only assistance"
+                            },
+                            {
+                                "description_ja": "つばめスイング",
+                                "description_en": "Tsubame swing"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L5",
+                        "name_ja": "逆上がり後半〜完成",
+                        "name_en": "Kip (Second Half) → Completion",
+                        "skills": [
+                            {
+                                "description_ja": "つばめ〜後半が1人でできる",
+                                "description_en": "From tsubame, can do the second half independently"
+                            },
+                            {
+                                "description_ja": "足を補助して後半ができる",
+                                "description_en": "Can do the second half with leg assistance"
+                            },
+                            {
+                                "description_ja": "補助で後半ができる",
+                                "description_en": "Can do the second half with assistance"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L6",
+                        "name_ja": "逆上がり前半",
+                        "name_en": "Kip (First Half)",
+                        "skills": [
+                            {
+                                "description_ja": "段差2枚逆上がり",
+                                "description_en": "Kip using a 2-mat height difference"
+                            },
+                            {
+                                "description_ja": "段差4枚逆上がり",
+                                "description_en": "Kip using a 4-mat height difference"
+                            },
+                            {
+                                "description_ja": "坂道逆上がり",
+                                "description_en": "Kip on an incline (slope-assisted kip)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L7",
+                        "name_ja": "懸垂肘曲げキープ75秒",
+                        "name_en": "Bent-Arm Hang Hold (75 seconds)",
+                        "skills": [
+                            {
+                                "description_ja": "懸垂肘曲げキープ3秒",
+                                "description_en": "Bent-arm hang hold, 3 seconds"
+                            },
+                            {
+                                "description_ja": "上半身補助キープ75秒",
+                                "description_en": "Upper-body assisted hold, 75 seconds"
+                            },
+                            {
+                                "description_ja": "下半身補助キープ75秒",
+                                "description_en": "Lower-body assisted hold, 75 seconds"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L8",
+                        "name_ja": "足抜きまわり",
+                        "name_en": "Leg-Through Circle",
+                        "skills": [
+                            {
+                                "description_ja": "足抜き（片道）",
+                                "description_en": "Leg-through (one-way)"
+                            },
+                            {
+                                "description_ja": "鉄棒に足タッチ",
+                                "description_en": "Touch the bar with the feet"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L9",
+                        "name_ja": "前回りおり",
+                        "name_en": "Forward Hip Circle Dismount",
+                        "skills": [
+                            {
+                                "description_ja": "つばめ〜補助で前にまわれる",
+                                "description_en": "From tsubame, can rotate forward with assistance"
+                            },
+                            {
+                                "description_ja": "つばめ〜1人でふとんになれる",
+                                "description_en": "From tsubame, can land on the mat ('futon') by oneself"
+                            },
+                            {
+                                "description_ja": "つばめ〜補助でふとんになれる",
+                                "description_en": "From tsubame, can land on the mat ('futon') with assistance"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "L10",
+                        "name_ja": "ジャンプ〜つばめ5秒",
+                        "name_en": "Jump to Front Support (Tsubame) – 5 seconds",
+                        "skills": [
+                            {
+                                "description_ja": "レベル3 ☆5秒つばめ",
+                                "description_en": "Level 3: 5-second tsubame hold"
+                            },
+                            {
+                                "description_ja": "レベル2 ☆3秒つばめ",
+                                "description_en": "Level 2: 3-second tsubame hold"
+                            },
+                            {
+                                "description_ja": "レベル1 ☆瞬時つばめ",
+                                "description_en": "Level 1: Instant tsubame (quick support)"
+                            }
+                        ]
+                    }
+                ],
+                "levels_beginner": [
+                    {
+                        "code": "B1",
+                        "name_ja": "前回り連続",
+                        "name_en": "Consecutive Forward Hip Circles",
+                        "skills": [
+                            {
+                                "description_ja": "手首だけの補助でできる",
+                                "description_en": "Can do it with wrist-only assistance"
+                            },
+                            {
+                                "description_ja": "1回目だけの補助でできる",
+                                "description_en": "Can do it with assistance only on the first rep"
+                            },
+                            {
+                                "description_ja": "前回りで肘が伸ばせる",
+                                "description_en": "Can keep elbows straight during the forward circle"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "B2",
+                        "name_ja": "屈身前回り",
+                        "name_en": "Pike Forward Hip Circle",
+                        "skills": [
+                            {
+                                "description_ja": "前半だけの補助でできる",
+                                "description_en": "Can do it with assistance on the first half only"
+                            },
+                            {
+                                "description_ja": "後半の起き上がりの理解",
+                                "description_en": "Understand the stand-up/recovery in the second half"
+                            },
+                            {
+                                "description_ja": "前半の倒れ方の理解",
+                                "description_en": "Understand how to tip/fall in the first half"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "B3",
+                        "name_ja": "屈身前回り連続",
+                        "name_en": "Consecutive Pike Forward Hip Circles",
+                        "skills": [
+                            {
+                                "description_ja": "手首だけの補助でできる",
+                                "description_en": "Can do it with wrist-only assistance"
+                            },
+                            {
+                                "description_ja": "屈身前回りだけの補助でできる",
+                                "description_en": "Can do it with assistance for the pike forward circle only"
+                            },
+                            {
+                                "description_ja": "屈身前回り〜つばめスイング",
+                                "description_en": "Pike forward hip circle → tsubame swing"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "B4",
+                        "name_ja": "け上がり（メビウス使用）",
+                        "name_en": "Kip Mount (using Mobius trainer)",
+                        "skills": [
+                            {
+                                "description_ja": "メビウスで下半身だけの補助でできる",
+                                "description_en": "With Mobius, can do it with lower-body-only assistance"
+                            },
+                            {
+                                "description_ja": "メビウスで補助でできる",
+                                "description_en": "With Mobius, can do it with assistance"
+                            },
+                            {
+                                "description_ja": "メビウスで走って足かけあがり",
+                                "description_en": "With Mobius, run-up and leg-hook mount"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "B5",
+                        "name_ja": "け上がり（素手）",
+                        "name_en": "Kip Mount (bare hands)",
+                        "skills": [
+                            {
+                                "description_ja": "下半身だけの補助でできる",
+                                "description_en": "Can do it with lower-body-only assistance"
+                            },
+                            {
+                                "description_ja": "補助でできる",
+                                "description_en": "Can do it with assistance"
+                            },
+                            {
+                                "description_ja": "走って足かけあがり",
+                                "description_en": "Run-up and leg-hook mount"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
