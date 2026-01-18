@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('class_sessions', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('class_template_id')->constrained()->cascadeOnDelete();
+            $table->date('date');
+            $table->dateTime('start_time');
+            $table->dateTime('end_time');
+            $table->smallInteger('capacity');
+            $table->boolean('allow_capacity_override')->default(true);
+            $table->enum('status', ['normal', 'cancelled', 'holiday']);
             $table->timestamps();
         });
     }

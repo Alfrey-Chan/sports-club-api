@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('age_categories', function (Blueprint $table) {
             $table->id();
+            $table->string("category_name")->unique();
             $table->timestamps();
         });
     }

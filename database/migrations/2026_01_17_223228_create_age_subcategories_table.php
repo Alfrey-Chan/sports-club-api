@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('age_subcategories', function (Blueprint $table) {
             $table->id();
+            $table->foreignId("age_category_id")->constrained()->cascadeOnDelete();
+            $table->string("category_name")->unique();
+            $table->smallInteger("min_age");
+            $table->smallInteger("max_age");
             $table->timestamps();
         });
     }

@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->id();
+            $table->foreignId("user_id")->constrained();
+            $table->string("first_name");
+            $table->string("last_name");
+            $table->string("employee_note");
+            $table->date("enrollment_date");
+            $table->date("date_of_birth");
+            $table->boolean("override_allowed")->default(false);
+            $table->smallInteger("capacity_weight")->default(1);
+            $table->smallInteger("monthly_reschedule_limit")->default(1);
             $table->timestamps();
         });
     }

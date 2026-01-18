@@ -11,15 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('student_class_enrolments', function (Blueprint $table) {
+        Schema::create('attendance_records', function (Blueprint $table) {
             $table->id();
             $table->foreignId('class_session_id')->constrained()->cascadeOnDelete();
             $table->foreignId('student_id')->constrained()->cascadeOnDelete();
-            $table->date('enrollment_date');
-            $table->smallInteger('capacity_units')->default(1);
-            $table->boolean('override_capacity')->default(false);
-            $table->enum('status', ['booked', 'cancelled', 'moved']);
+            $table->foreignId('marked_by_employee_id')->nullable()->constrained('employees')->nullOnDelete();
+            $table->enum('status', ['present', 'absent']);
             $table->timestamps();
+
+            $table->unique(['class_session_id', 'student_id']);
         });
     }
 
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('student_class_enrolments');
+        Schema::dropIfExists('attendance_records');
     }
 };

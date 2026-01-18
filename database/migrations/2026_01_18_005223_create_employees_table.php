@@ -11,8 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('student_guardians', function (Blueprint $table) {
+        Schema::create('employees', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained();
+            $table->string('first_name');
+            $table->string('last_name');
+            $table->date('employment_date');
+            $table->date('resignation_date')->nullable()->default(null);
             $table->timestamps();
         });
     }
@@ -22,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('student_guardians');
+        Schema::dropIfExists('employees');
     }
 };
