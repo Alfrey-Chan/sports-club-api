@@ -23,6 +23,12 @@ class AuthController extends Controller
         $tokenName = 'sanctumToken';
         $token = $user->createToken($tokenName);
 
+        // demo reset
+        foreach ($user->students as $student) {
+            $student->reschedules_used = 0;
+            $student->save();
+        }
+
         return response()->json([
             'message' => 'Logged in successfully',
             'data' => [
@@ -53,10 +59,6 @@ class AuthController extends Controller
                 $class['class_name'] = $className[0];
                 $class['day_of_week'] = $dayOfWeek;
             }
-
-            // resets for demo
-            $student->reschedules_used = 0;
-            $student->save();
         }
 
         return response()->json([
