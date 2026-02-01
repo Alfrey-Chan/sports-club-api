@@ -1,0 +1,146 @@
+{
+    "class_templates": [
+        {
+            "template_key": "pre_k_1045",
+            "label_en": "preschool",
+            "label_ja": "未就園児クラス",
+            "days": ["tue", "wed", "fri"],
+            "start_time": "10:45:00",
+            "end_time": "11:30:00",
+            "default_capacity": 10,
+            "eligible_age_subcategory_keys": ["mishoenji"]
+        },
+
+        {
+            "template_key": "yoji_1510_weekday",
+            "label_en": "toddler",
+            "label_ja": "幼児クラス（年少〜年長）",
+            "days": ["tue", "wed", "thu", "fri"],
+            "start_time": "15:10:00",
+            "end_time": "16:00:00",
+            "default_capacity": 10,
+            "eligible_age_subcategory_keys": ["nensho", "nenchu", "nencho"]
+        },
+        {
+            "template_key": "yoji_shogaku_1610_weekday",
+            "label_en": "toddler_elementary",
+            "label_ja": "幼児・小学生クラス（年中〜小学生）",
+            "days": ["tue", "wed", "thu", "fri"],
+            "start_time": "16:10:00",
+            "end_time": "17:00:00",
+            "default_capacity": 10,
+            "eligible_age_subcategory_keys": [
+                "nenchu",
+                "nencho",
+                "low",
+                "mid",
+                "high"
+            ]
+        },
+        {
+            "template_key": "nencho_shogaku_1710_weekday",
+            "label_en": "elementary",
+            "label_ja": "小学生クラス（年長〜小学生）",
+            "days": ["tue", "wed", "thu", "fri"],
+            "start_time": "17:10:00",
+            "end_time": "18:00:00",
+            "default_capacity": 10,
+            "eligible_age_subcategory_keys": ["nencho", "low", "mid", "high"]
+        },
+
+        {
+            "template_key": "exam_prep_0830_weekend",
+            "label_en": "exam_prep",
+            "label_ja": "小学校受験対策クラス（年長）",
+            "days": ["sat", "sun"],
+            "start_time": "08:30:00",
+            "end_time": "09:30:00",
+            "default_capacity": 10,
+            "eligible_age_subcategory_keys": ["nencho"]
+        },
+
+        {
+            "template_key": "yoji_1000_weekend",
+            "label_en": "toddler",
+            "label_ja": "幼児クラス（年少〜年長）",
+            "days": ["sat", "sun"],
+            "start_time": "10:00:00",
+            "end_time": "10:50:00",
+            "default_capacity": 10,
+            "eligible_age_subcategory_keys": ["nensho", "nenchu", "nencho"]
+        },
+        {
+            "template_key": "yoji_shogaku_1100_weekend",
+            "label_en": "toddler_elementary",
+            "label_ja": "幼児・小学生クラス（年中〜小学生）",
+            "days": ["sat", "sun"],
+            "start_time": "11:00:00",
+            "end_time": "11:50:00",
+            "default_capacity": 10,
+            "eligible_age_subcategory_keys": [
+                "nenchu",
+                "nencho",
+                "low",
+                "mid",
+                "high"
+            ]
+        },
+        {
+            "template_key": "yoji_1320_weekend",
+            "label_en": "toddler",
+            "label_ja": "幼児クラス（年少〜年長）",
+            "days": ["sat", "sun"],
+            "start_time": "13:20:00",
+            "end_time": "14:10:00",
+            "default_capacity": 10,
+            "eligible_age_subcategory_keys": ["nensho", "nenchu", "nencho"]
+        },
+        {
+            "template_key": "yoji_shogaku_1420_weekend",
+            "label_en": "toddler_elementary",
+            "label_ja": "幼児・小学生クラス（年中〜小学生）",
+            "days": ["sat", "sun"],
+            "start_time": "14:20:00",
+            "end_time": "15:10:00",
+            "default_capacity": 10,
+            "eligible_age_subcategory_keys": [
+                "nenchu",
+                "nencho",
+                "low",
+                "mid",
+                "high"
+            ]
+        },
+        {
+            "template_key": "nencho_shogaku_1520_weekend",
+            "label_en": "elementary",
+            "label_ja": "小学生クラス（年長〜小学生）",
+            "days": ["sat", "sun"],
+            "start_time": "15:20:00",
+            "end_time": "16:10:00",
+            "default_capacity": 10,
+            "eligible_age_subcategory_keys": ["nencho", "low", "mid", "high"]
+        },
+
+        {
+            "template_key": "shogaku_chugaku_1620_weekend",
+            "label_en": "elementary_middle",
+            "label_ja": "小学生・中学生クラス（小学生〜中学生）",
+            "days": ["sat", "sun"],
+            "start_time": "16:20:00",
+            "end_time": "17:10:00",
+            "default_capacity": 10,
+            "eligible_age_subcategory_keys": ["low", "mid", "high"]
+        },
+        {
+            "template_key": "acro_1720_weekend",
+            "label_en": "acrobat",
+            "label_ja": "バク転・アクロバットクラス（小学生〜成人）",
+            "days": ["sat", "sun"],
+            "start_time": "17:20:00",
+            "end_time": "18:10:00",
+            "default_capacity": 10,
+            "eligible_age_subcategory_keys": ["low", "mid", "high"]
+        }
+    ]
+}

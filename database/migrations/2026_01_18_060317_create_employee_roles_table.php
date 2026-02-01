@@ -11,13 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('age_subcategories', function (Blueprint $table) {
+        Schema::create('employee_roles', function (Blueprint $table) {
             $table->id();
-            $table->foreignId("age_category_id")->constrained()->cascadeOnDelete();
-            $table->string("key");
-            $table->string("name_ja")->unique();
-            $table->smallInteger("min_age");
-            $table->smallInteger("max_age");
+            $table->string('role_code')->unique();
             $table->timestamps();
         });
     }
@@ -27,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('age_subcategories');
+        Schema::dropIfExists('employee_roles');
     }
 };

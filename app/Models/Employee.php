@@ -11,6 +11,6 @@ class Employee extends Model
         'first_name',
         'last_name',
         'employment_date',
-        'resignation_date',
+        'resignation_date'
     ];
 }

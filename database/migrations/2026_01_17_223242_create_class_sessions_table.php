@@ -15,11 +15,11 @@ return new class extends Migration
             $table->id();
             $table->foreignId('class_template_id')->constrained()->cascadeOnDelete();
             $table->date('date');
-            $table->dateTime('start_time');
-            $table->dateTime('end_time');
-            $table->smallInteger('capacity');
+            $table->time('start_time');
+            $table->time('end_time');
+            $table->tinyInteger('capacity');
             $table->boolean('allow_capacity_override')->default(true);
-            $table->enum('status', ['normal', 'cancelled', 'holiday']);
+            $table->enum('status', ['confirmed', 'cancelled', 'holiday']);
             $table->timestamps();
         });
     }

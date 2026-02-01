@@ -10,14 +10,24 @@ class StudentClassEnrolment extends Model
     protected $fillable = [
         'class_session_id',
         'student_id',
-        'enrollment_date',
+        'enrolment_date',
         'capacity_units',
-        'override_capacity',
+        // 'override_capacity',
         'status',
     ];
 
     protected $casts = [
-        'enrollment_date' => 'date',
-        'override_capacity' => 'boolean',
+        'enrolment_date' => 'date',
+        // 'override_capacity' => 'boolean',
     ];
+
+    public function classSession(): BelongsTo
+    {
+        return $this->belongsTo(ClassSession::class);
+    }
+
+    public function student(): BelongsTo
+    {
+        return $this->belongsto(Student::class);
+    }
 }

@@ -1,16 +1,58 @@
 {
     "age_categories": [
         {
-            "幼児": {
-                "年少": [3],
-                "年中": [4],
-                "年長": [5, 6]
-            },
-            "小学生": {
-                "低学年": [6, 8],
-                "中学年": [8, 10],
-                "高学年": [10, 12]
-            }
+            "key": "yoji",
+            "name_ja": "幼児",
+            "subcategories": [
+                {
+                    "key": "mishoenji",
+                    "name_ja": "未就園児",
+                    "min_age": 2,
+                    "max_age": 3
+                },
+                {
+                    "key": "nensho",
+                    "name_ja": "年少",
+                    "min_age": 3,
+                    "max_age": 3
+                },
+                {
+                    "key": "nenchu",
+                    "name_ja": "年中",
+                    "min_age": 4,
+                    "max_age": 4
+                },
+                {
+                    "key": "nencho",
+                    "name_ja": "年長",
+                    "min_age": 5,
+                    "max_age": 6
+                }
+            ]
+        },
+        {
+            "key": "shogaku",
+            "name_ja": "小学生",
+            "subcategories": [
+                {
+                    "key": "low",
+                    "name_ja": "小学生",
+                    "min_age": 6,
+                    "max_age": 8
+                },
+                {
+                    "key": "mid",
+                    "name_ja": "中学年",
+                    "min_age": 8,
+                    "max_age": 10
+                },
+                {
+                    "key": "high",
+                    "name_ja": "高学年",
+                    "min_age": 10,
+                    "max_age": 12
+                }
+            ]
         }
     ],
     "track_categories": [
@@ -20,7 +62,7 @@
             "levels": {
                 "levels_standard": [
                     {
-                        "code": "L1",
+                        "lvl": 1,
                         "name_ja": "バク転",
                         "name_en": "Back Handspring",
                         "skills": [
@@ -39,7 +81,7 @@
                         ]
                     },
                     {
-                        "code": "L2",
+                        "lvl": 2,
                         "name_ja": "転回",
                         "name_en": "Handspring",
                         "skills": [
@@ -58,7 +100,7 @@
                         ]
                     },
                     {
-                        "code": "L3",
+                        "lvl": 3,
                         "name_ja": "ヘッドスプリング",
                         "name_en": "Head Spring",
                         "skills": [
@@ -77,7 +119,7 @@
                         ]
                     },
                     {
-                        "code": "L4",
+                        "lvl": 4,
                         "name_ja": "倒立前転",
                         "name_en": "Handstand Forward Roll",
                         "skills": [
@@ -96,7 +138,7 @@
                         ]
                     },
                     {
-                        "code": "L5",
+                        "lvl": 5,
                         "name_ja": "側転",
                         "name_en": "Cartwheel",
                         "skills": [
@@ -115,7 +157,7 @@
                         ]
                     },
                     {
-                        "code": "L6",
+                        "lvl": 6,
                         "name_ja": "倒立",
                         "name_en": "Handstand",
                         "skills": [
@@ -134,7 +176,7 @@
                         ]
                     },
                     {
-                        "code": "L7",
+                        "lvl": 7,
                         "name_ja": "開脚前転・後転",
                         "name_en": "Straddle Forward / Backward Roll",
                         "skills": [
@@ -153,7 +195,7 @@
                         ]
                     },
                     {
-                        "code": "L8",
+                        "lvl": 8,
                         "name_ja": "後転",
                         "name_en": "Backward Roll",
                         "skills": [
@@ -172,7 +214,7 @@
                         ]
                     },
                     {
-                        "code": "L9",
+                        "lvl": 9,
                         "name_ja": "フリッチ",
                         "name_en": "Front Handspring Prep (Flic)",
                         "skills": [
@@ -191,7 +233,7 @@
                         ]
                     },
                     {
-                        "code": "L10",
+                        "lvl": 10,
                         "name_ja": "前転",
                         "name_en": "Forward Roll",
                         "skills": [
@@ -212,7 +254,7 @@
                 ],
                 "levels_beginner": [
                     {
-                        "code": "B1",
+                        "lvl": 1,
                         "name_ja": "片足転回",
                         "name_en": "One-Leg Handspring Prep",
                         "skills": [
@@ -223,7 +265,7 @@
                         ]
                     },
                     {
-                        "code": "B2",
+                        "lvl": 2,
                         "name_ja": "転回連続",
                         "name_en": "Continuous Handspring",
                         "skills": [
@@ -234,7 +276,7 @@
                         ]
                     },
                     {
-                        "code": "B3",
+                        "lvl": 3,
                         "name_ja": "ロンダート",
                         "name_en": "Round-off",
                         "skills": [
@@ -249,7 +291,7 @@
                         ]
                     },
                     {
-                        "code": "B4",
+                        "lvl": 4,
                         "name_ja": "ロンダート〜バク転",
                         "name_en": "Round-off to Back Handspring",
                         "skills": [
@@ -268,7 +310,7 @@
                         ]
                     },
                     {
-                        "code": "B5",
+                        "lvl": 5,
                         "name_ja": "宙返り",
                         "name_en": "Somersault",
                         "skills": [
@@ -295,7 +337,7 @@
             "levels": {
                 "levels_standard": [
                     {
-                        "code": "L1",
+                        "lvl": 1,
                         "name_ja": "4段転回とび",
                         "name_en": "Handspring Vault (4-box)",
                         "skills": [
@@ -306,7 +348,7 @@
                         ]
                     },
                     {
-                        "code": "L2",
+                        "lvl": 2,
                         "name_ja": "跳れ込み（4段）",
                         "name_en": "Dive-on Mount (4-box)",
                         "skills": [
@@ -325,7 +367,7 @@
                         ]
                     },
                     {
-                        "code": "L3",
+                        "lvl": 3,
                         "name_ja": "6段開脚とび（よこ）",
                         "name_en": "Straddle Vault (6-box, sideways)",
                         "skills": [
@@ -344,7 +386,7 @@
                         ]
                     },
                     {
-                        "code": "L4",
+                        "lvl": 4,
                         "name_ja": "6段台上前転（たて）",
                         "name_en": "On-Box Forward Roll (6-box, lengthwise)",
                         "skills": [
@@ -363,7 +405,7 @@
                         ]
                     },
                     {
-                        "code": "L5",
+                        "lvl": 5,
                         "name_ja": "6段開脚とび（たて）",
                         "name_en": "Straddle Vault (6-box, lengthwise)",
                         "skills": [
@@ -382,7 +424,7 @@
                         ]
                     },
                     {
-                        "code": "L6",
+                        "lvl": 6,
                         "name_ja": "4段開脚とび（よこ）",
                         "name_en": "Straddle Vault (4-box, sideways)",
                         "skills": [
@@ -401,7 +443,7 @@
                         ]
                     },
                     {
-                        "code": "L7",
+                        "lvl": 7,
                         "name_ja": "4段台上前転（たて）",
                         "name_en": "On-Box Forward Roll (4-box, lengthwise)",
                         "skills": [
@@ -420,7 +462,7 @@
                         ]
                     },
                     {
-                        "code": "L8",
+                        "lvl": 8,
                         "name_ja": "4段開脚とび（よこ）",
                         "name_en": "Straddle Vault (4-box, sideways)",
                         "skills": [
@@ -439,7 +481,7 @@
                         ]
                     },
                     {
-                        "code": "L9",
+                        "lvl": 9,
                         "name_ja": "ロイター板ジャンプ",
                         "name_en": "Springboard Jump",
                         "skills": [
@@ -458,7 +500,7 @@
                         ]
                     },
                     {
-                        "code": "L10",
+                        "lvl": 10,
                         "name_ja": "両足ジャンプ（1段）",
                         "name_en": "Two-Foot Jump (1-box)",
                         "skills": [
@@ -479,7 +521,7 @@
                 ],
                 "levels_beginner": [
                     {
-                        "code": "B1",
+                        "lvl": 1,
                         "name_ja": "6段転回とび",
                         "name_en": "Handspring Vault (6-box)",
                         "skills": [
@@ -490,7 +532,7 @@
                         ]
                     },
                     {
-                        "code": "B2",
+                        "lvl": 2,
                         "name_ja": "とび込み前転",
                         "name_en": "Dive Roll",
                         "skills": [
@@ -505,7 +547,7 @@
                         ]
                     },
                     {
-                        "code": "B3",
+                        "lvl": 3,
                         "name_ja": "かかえ込み前宙",
                         "name_en": "Tuck Front Somersault",
                         "skills": [
@@ -520,7 +562,7 @@
                         ]
                     },
                     {
-                        "code": "B4",
+                        "lvl": 4,
                         "name_ja": "屈伸前宙",
                         "name_en": "Pike Front Somersault",
                         "skills": [
@@ -535,7 +577,7 @@
                         ]
                     },
                     {
-                        "code": "B5",
+                        "lvl": 5,
                         "name_ja": "伸身前宙",
                         "name_en": "Layout Front Somersault",
                         "skills": [
@@ -558,7 +600,7 @@
             "levels": {
                 "levels_standard": [
                     {
-                        "code": "L1",
+                        "lvl": 1,
                         "name_ja": "後ろ回り連続",
                         "name_en": "Consecutive Back Hip Circles",
                         "skills": [
@@ -577,7 +619,7 @@
                         ]
                     },
                     {
-                        "code": "L2",
+                        "lvl": 2,
                         "name_ja": "前回り〜即後ろ回り",
                         "name_en": "Forward Hip Circle → Immediate Back Hip Circle",
                         "skills": [
@@ -596,7 +638,7 @@
                         ]
                     },
                     {
-                        "code": "L3",
+                        "lvl": 3,
                         "name_ja": "前回り",
                         "name_en": "Forward Hip Circle",
                         "skills": [
@@ -615,7 +657,7 @@
                         ]
                     },
                     {
-                        "code": "L4",
+                        "lvl": 4,
                         "name_ja": "後ろ回り",
                         "name_en": "Back Hip Circle",
                         "skills": [
@@ -634,7 +676,7 @@
                         ]
                     },
                     {
-                        "code": "L5",
+                        "lvl": 5,
                         "name_ja": "逆上がり後半〜完成",
                         "name_en": "Kip (Second Half) → Completion",
                         "skills": [
@@ -653,7 +695,7 @@
                         ]
                     },
                     {
-                        "code": "L6",
+                        "lvl": 6,
                         "name_ja": "逆上がり前半",
                         "name_en": "Kip (First Half)",
                         "skills": [
@@ -672,7 +714,7 @@
                         ]
                     },
                     {
-                        "code": "L7",
+                        "lvl": 7,
                         "name_ja": "懸垂肘曲げキープ75秒",
                         "name_en": "Bent-Arm Hang Hold (75 seconds)",
                         "skills": [
@@ -691,7 +733,7 @@
                         ]
                     },
                     {
-                        "code": "L8",
+                        "lvl": 8,
                         "name_ja": "足抜きまわり",
                         "name_en": "Leg-Through Circle",
                         "skills": [
@@ -706,7 +748,7 @@
                         ]
                     },
                     {
-                        "code": "L9",
+                        "lvl": 9,
                         "name_ja": "前回りおり",
                         "name_en": "Forward Hip Circle Dismount",
                         "skills": [
@@ -725,7 +767,7 @@
                         ]
                     },
                     {
-                        "code": "L10",
+                        "lvl": 10,
                         "name_ja": "ジャンプ〜つばめ5秒",
                         "name_en": "Jump to Front Support (Tsubame) – 5 seconds",
                         "skills": [
@@ -746,7 +788,7 @@
                 ],
                 "levels_beginner": [
                     {
-                        "code": "B1",
+                        "lvl": 1,
                         "name_ja": "前回り連続",
                         "name_en": "Consecutive Forward Hip Circles",
                         "skills": [
@@ -765,7 +807,7 @@
                         ]
                     },
                     {
-                        "code": "B2",
+                        "lvl": 2,
                         "name_ja": "屈身前回り",
                         "name_en": "Pike Forward Hip Circle",
                         "skills": [
@@ -784,7 +826,7 @@
                         ]
                     },
                     {
-                        "code": "B3",
+                        "lvl": 3,
                         "name_ja": "屈身前回り連続",
                         "name_en": "Consecutive Pike Forward Hip Circles",
                         "skills": [
@@ -803,7 +845,7 @@
                         ]
                     },
                     {
-                        "code": "B4",
+                        "lvl": 4,
                         "name_ja": "け上がり（メビウス使用）",
                         "name_en": "Kip Mount (using Mobius trainer)",
                         "skills": [
@@ -822,7 +864,7 @@
                         ]
                     },
                     {
-                        "code": "B5",
+                        "lvl": 5,
                         "name_ja": "け上がり（素手）",
                         "name_en": "Kip Mount (bare hands)",
                         "skills": [

@@ -15,11 +15,15 @@ return new class extends Migration
             $table->id();
             $table->foreignId('class_session_id')->constrained()->cascadeOnDelete();
             $table->foreignId('student_id')->constrained()->cascadeOnDelete();
-            $table->date('enrollment_date');
+            $table->date('enrolment_date');
             $table->smallInteger('capacity_units')->default(1);
-            $table->boolean('override_capacity')->default(false);
-            $table->enum('status', ['booked', 'cancelled', 'moved']);
+            // $table->boolean('override_capacity')->default(false);
+            $table->enum('status', ['booked', 'cancelled', 'moved'])->default('booked');
             $table->timestamps();
+
+            $table->index(['student_id', 'status']);
+            $table->index(['class_session_id', 'status']);
+            $table->index(['class_session_id', 'capacity_units']);
         });
     }
 

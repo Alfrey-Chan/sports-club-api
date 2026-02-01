@@ -2,7 +2,11 @@
 
 namespace App\Models;
 
+use App\Models\StudentClassEnrolment;
+use DateTimeInterface;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class ClassSession extends Model
 {
@@ -18,8 +22,15 @@ class ClassSession extends Model
 
     protected $casts = [
         'date' => 'date',
-        'start_time' => 'datetime:H:i:s',
-        'end_time' => 'datetime:H:i:s',
         'allow_capacity_override' => 'boolean',
     ];
+    public function classTemplate(): BelongsTo
+    {
+        return $this->belongsTo(ClassTemplate::class);
+    }
+
+    public function enrolments(): HasMany
+    {
+        return $this->hasMany(StudentClassEnrolment::class);
+    }
 }

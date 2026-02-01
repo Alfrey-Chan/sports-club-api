@@ -13,13 +13,16 @@ return new class extends Migration
     {
         Schema::create('class_templates', function (Blueprint $table) {
             $table->id();
-            $table->foreignId("location_id")->constrained();
-            $table->foreignId("age_subcategory_id")->constrained()->cascadeOnDelete();
-            $table->smallInteger("day_of_week");
-            $table->smallInteger("default_capacity");
-            $table->dateTime("start_time");
-            $table->dateTime("end_time");
+            $table->foreignId('location_id')->constrained();
+            $table->string('label_en');
+            $table->string('label_ja');
+            $table->tinyInteger('day_of_week');
+            $table->tinyInteger('default_capacity');
+            $table->time('start_time');
+            $table->time('end_time');
             $table->timestamps();
+
+            $table->unique(['location_id', 'day_of_week', 'start_time', 'end_time']);
         });
     }
 
