@@ -17,22 +17,23 @@ class StudentFactory extends Factory
      */
     public function definition(): array
     {   
-        $dob = $this->faker->dateTimeBetween('-12 years', '-3 years')->format('Y-m-d');
+        $faker = \Faker\Factory::create('ja_JP');
+        $dob = $faker->dateTimeBetween('-12 years', '-3 years')->format('Y-m-d');
 
         return [
             'user_id' => User::factory(),
 
             'age_subcategory_id' => 1, // fix seeding here, then figure out how to seed enrolments.
 
-            'name_hiragana' => $this->faker->kanaName(),
-            'first_name_ja' => $this->faker->firstKanaName(),
-            'last_name_ja' => $this->faker->lastKanaName(),
-            'first_name_en' => $this->faker->firstName(),
-            'last_name_en' => $this->faker->lastKanaName(),
+            'name_hiragana' => $faker->kanaName(),
+            'first_name_ja' => $faker->firstKanaName(),
+            'last_name_ja' => $faker->lastKanaName(),
+            'first_name_en' => $faker->firstName(),
+            'last_name_en' => $faker->lastKanaName(),
 
-            'employee_note' => $this->faker->sentence(10),
+            'employee_note' => $faker->sentence(10),
 
-            'enrollment_date' => $this->faker->dateTimeBetween('-6 months', 'now'),
+            'enrollment_date' => $faker->dateTimeBetween('-6 months', 'now'),
             'date_of_birth' => $dob,
 
             'override_allowed' => false,
